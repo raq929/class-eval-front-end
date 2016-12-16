@@ -1,7 +1,7 @@
 {
   "name": "class-eval",
   "version": "0.0.0",
-  "description": "ember auth training",
+  "description": "An app for evaluating student projects",
   "private": true,
   "directories": {
     "doc": "doc",

@@ -1,7 +1,12 @@
 <h3 class="roster-header" {{action 'toggleRosterDetail'}}>{{roster.name}}</h3>
-<!-- <h4>Students</h4>
+<h4>Students</h4>
+{{#if roster.students}}
 <ul>
   {{#each roster.students as |student|}}
     {{roster-list/student student=student}}
   {{/each}}
-</ul> -->
+</ul>
+{{else}}
+ <p>There are no students in this class yet.</p>
+{{/if}}
+{{#link-to 'rosters'}}Back{{/link-to}}
